@@ -3,49 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Контакти — Фаґлер-Університет</title>
 </head>
 <body>
-    
-    <center>
-        <h1> КОНТАКТИ </h1>
-    </center>
+
+    <header>
+        <center>
+            <h1> КОНТАКТИ ІНСТИТУТУ</h1>
+        </center>
+        <h3>НАВІГАЦІЯ:</h3>
+        <nav>
+                <ul>
+                    <li><a href="../index.html">ГОЛОВНА</a></li>
+                    <li><a href="about.html">ВИКЛАДАЧІ</a></li>
+                    <li><a href="blog.html">БЛОГ</a></li>
+                    <li><b>КОНТАКТИ</b> (ти тут)</li>
+                    <li><a href="faq.html">ЧАСТІ ПИТАННЯ</a></li>
+                </ul>
+
+        </nav>
+    </header>
 
     <hr noshade size="15">
 
-    <h3>НАВІГАЦІЯ:</h3>
+    <main>
+        <section>
+            <center>
+                <h2>ЯК НАС ЗНАЙТИ</h2>
+                
+                <address>
+                    <p>📍 <strong>Адреса:</strong> м. Зубоград, вул. Плюшева, буд. 13, підвал №1</p>
+                    <p>📱 <strong>Телефон:</strong> <a href="tel:+380990000000">+38 (099) 000-00-00</a></p>
+                    <p>📧 <strong>Email:</strong> <a href="mailto:admin@fuggler.edu">admin@fuggler.edu</a></p>
+                </address>
 
-    <nav>
-        <ul>
-            <li><a href="../index.html">ГОЛОВНА</a></li>
-            <li><a href="about.html">ВИКЛАДАЧІ</a></li>
-            <li><a href="gallery.html">ГАЛЕРЕЯ МОНСТРІВ</a></li>
-            <Li><b>КОНТАКТИ</b>(ти тут)</Li>
-            <li><a href="faq.html">ЧАСТІ ПИТАННЯ</a></li>
-        </ul>
-    </nav>
+                <figure>
+                    <img src="../images/6417647303_w300_h300_myaka-igrashka-skvidzh-fioletovij.webp" width="200" alt="Наш секретар Сквідж">
+                    <figcaption>Наш секретар Сквідж завжди на зв'язку</figcaption>
+                </figure>
+            </center>
+        </section>
 
-    <hr>
+        <hr width="50%">
 
-    <center> 
-        <h2>ЯК НАС ЗНАЙТИ</h2>
+        <section>
+            <center>
+                <h3>ЗВОРОТНИЙ ЗВ'ЯЗОК</h3>
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Ваші дані</legend>
+                        
+                        <p>
+                            <label for="user-name">Ваше ім'я:</label>
+                            <input type="text" id="user-name" name="username" placeholder="Введіть ім'я" required>
+                        </p>
 
-        <address>
-            📍 <strong>Адреса:</strong> м. Зубоград, вул. Плюшева, буд. 13, підвал №1
-        </address>
+                        <p>
+                            <label for="user-email">Ваш Email:</label>
+                            <input type="email" id="user-email" name="email" placeholder="example@mail.com">
+                        </p>
 
-        <p>
-            📱 <strong>Телефон:</strong> 
-            <a href="tel:+380990000000">+38 (099) 000-00-00</a>
-        </p>
+                        <p>
+                            <label for="message">Повідомлення:</label><br>
+                            <textarea id="message" name="message" rows="5" cols="30" placeholder="Що ви хочете спитати у монстрів?"></textarea>
+                        </p>
 
-        <p>
-            📧 <strong>Email:</strong> 
-            <a href="mailto:admin@fuggler.edu">admin@fuggler.edu</a>
-        </p>
+                        <p>
+                            <input type="submit" value="Надіслати">
+                            <input type="reset" value="Очистити">
+                        </p>
+                    </fieldset>
+                </form>
+            </center>
+        </section>
+    </main>
 
-        <img src="../images/6417647303_w300_h300_myaka-igrashka-skvidzh-fioletovij.webp" width="200" hspace="10" title="Монстр 1">
-    </center>
-    
+    <footer>
+        <hr noshade size="5">
+        <center>
+            <p>&copy; 2026 Фаґлер-Університет. Працюємо з <time datetime="09:00">09:00</time> до <time datetime="18:00">18:00</time>.</p>
+        </center>
+    </footer>
+
 </body>
 </html>

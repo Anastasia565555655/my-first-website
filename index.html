@@ -3,51 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ФАҐЛЕР-ІНСТИТУТ</title>
+    <title>ФАҐЛЕР-УНІВЕРСИТЕТ — Головна</title>
 </head>
 <body>
 
-    <center>
-        <h1>ФАҐЛЕР-УНІВЕРСИТЕТ</h1>
-    </center>
+    <header>
+        <center>
+            <h1>ФАҐЛЕР-УНІВЕРСИТЕТ</h1>
+        </center>
+        <h3>НАВІГАЦІЯ:</h3>
+        <nav>
+                <ul>
+                   <li><b>ГОЛОВНА</b> (ти тут)</li>
+                   <li><a href="pages/about.html">ВИКЛАДАЧІ</a></li>
+                   <li><a href="pages/blog.html">БЛОГ</a></li>
+                   <li><a href="pages/contacts.html">КОНТАКТИ</a></li>
+                   <li><a href="pages/faq.html">ЧАСТІ ПИТАННЯ</a></li>
+                </ul>
+        </nav>
+    </header>
 
     <hr noshade size="15">
 
-    <h3>НАВІГАЦІЯ:</h3>
-    
-    <nav>
-        <ul>
-           <li><b>ГОЛОВНА</b> (ти тут)</li>
-           <li><a href="pages/about.html">ВИКЛАДАЧІ</a></li>
-           <li><a href="pages/gallery.html">ГАЛЕРЕЯ МОНСТРІВ</a></li>
-           <li><a href="pages/contacts.html">КОНТАКТИ</a></li>
-           <li><a href="pages/faq.html">ЧАСТІ ПИТАННЯ</a></li>
-        </ul>
+    <main>
+        
+        <section>
+            <center>
+                <marquee direction="right" scrollamount="10">🦷🦷🦷 ЧИЇ ЦЕ ЗУБИ? ЧИЇ ЦЕ ЗУБИ? 🦷🦷🦷</marquee>
 
-    </nav>
-    <hr>
+                <h2>Наш Ректор:</h2>
+                <figure>
+                    <img src="images/fuggler1.jpg" width="250" title="Містер Гризь" alt="Фото ректора">
+                    <figcaption>Містер Гризь на робочому місці </figcaption>
+                </figure>
+            </center>
+        </section>
 
-    <center>
-        <marquee direction="right" scrollamount="10">🦷🦷🦷 ЧИЇ ЦЕ ЗУБИ? ЧИЇ ЦЕ ЗУБИ? 🦷🦷🦷</marquee>
+        <hr>
 
-        <h2>Наш Ректор:</h2>
-        <img src="images/fuggler1.jpg" width="250" title="Містер Гризь">
-    </center>
+        <section>
+            <h3>НОВИНИ ІНСТИТУТУ:</h3>
+            
+            <article>
+                <h4>Нові матеріали</h4>
+                <p>Знайшли склад гудзиків (тепер очі будуть у всіх на місці).</p>
+                <p>Опубліковано: <time datetime="2026-03-15">15 березня 2026</time> </p>
+            </article>
 
-    <hr>
+            <article>
+                <h4>Зміни у розкладі</h4>
+                <p>Лекція на тему <code>"Як гризти граніт науки і не зламати ікла"</code> переноситься.</p>
+            </article>
 
-    <h3>НОВИНИ ІНСТИТУТУ:</h3>
-    <ol>
-        <li>Знайшли склад гудзиків (тепер очі будуть у всіх на місці).</li>
-        <li>Лекція на тему "Як гризти граніт науки і не зламати ікла" переноситься.</li>
-        <li><strong>ВАЖЛИВО:</strong> Не годуйте фаґлерів після опівночі.</li>
-    </ol>
+            <article>
+                <h4><mark>ВАЖЛИВО:</mark></h4>
+                <p> Не годуйте фаґлерів після опівночі.</p>
+            </article>
+        </section>
 
-    <hr>
-    
-    <p>Наскільки ти боїшся нашого ректора?</p>
-    Зовсім ні <input type="range"> ДУЖЕ СИЛЬНО!
+        <hr>
+        
+        <section>
+            <p>Наскільки ти боїшся нашого ректора?</p>
+            <form>
+                Зовсім ні <input type="range" name="fear_level"> ДУЖЕ СИЛЬНО!
+            </form>
+        </section>
 
+    </main>
+
+    <footer>
+        <hr noshade size="5">
+        <center>
+            <p>&copy; 2026 Фаґлер-Університет. Всі права захищені зубами.</p>
+        </center>
+    </footer>
 
 </body>
 </html>
