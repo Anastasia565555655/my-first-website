@@ -4,6 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Блог та Галерея — Фаґлер-Університет</title>
+    <style>
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th, td { border: 1px solid #000; padding: 10px; text-align: center; }
+        th { background-color: #f2f2f2; }
+        
+        /*  для шахівниці */
+        .chessboard { 
+            border: 5px solid #333; 
+            margin: 20px auto; 
+            width: auto;
+        }
+        .chessboard td { 
+            width: 50px; 
+            height: 50px; 
+            font-size: 30px; 
+        }
+        .chessboard tr:nth-child(odd) td:nth-child(even),
+        .chessboard tr:nth-child(even) td:nth-child(odd) { 
+            background: #bbb; 
+        }
+        .chessboard tr:nth-child(odd) td:nth-child(odd),
+        .chessboard tr:nth-child(even) td:nth-child(even) { 
+            background: #fff; 
+        }
+        .chessboard th { width: 30px; height: 30px; }
+    </style>
 </head>
 <body>
 
@@ -48,6 +74,46 @@
         <hr>
 
         <section>
+            <center><h2>ПРОГРАМА ПЕРЕДАЧ ФАҐЛЕР-ТБ</h2></center>
+            <table>
+                <caption>Розклад ефіру на сьогодні</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Час</th>
+                        <th scope="col">Канал 1</th>
+                        <th scope="col">Канал 2</th>
+                        <th scope="col">Канал 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">18:00 - 19:00</th>
+                        <td>Новини університету</td>
+                        <td>Мультфільм</td>
+                        <td>Інтерв'ю</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">19:00 - 20:00</th>
+                        <td rowspan="2">Вечірнє шоу "Зуби"</td>
+                        <td>Документальний фільм</td>
+                        <td>Спорт</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">20:00 - 21:00</th>
+                        <td>Прогноз погоди</td>
+                        <td>Аналітика</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">21:00 - 22:00</th>
+                        <td colspan="3">Спільний ефір: Сонна година</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <section>
             <center><h2>ОСТАННІ НОВИНИ</h2></center>
 
             <article>
@@ -64,6 +130,36 @@
                 <p>Сьогодні до нашого інституту завітав рідкісний екземпляр. Як пише <cite>"Зубаста газета"</cite>, він вміє кусати навіть повітря.</p>
                 <p>Ми дуже <em>вражені</em> його здібностями!</p>
             </article>
+        </section>
+
+        <hr>
+
+        <section>
+            <center>
+                <h2> ШАХОВИЙ КЛУБ УНІВЕРСИТЕТУ</h2>
+                <table class="chessboard">
+                    <tbody>
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>♜</td><td>♞</td><td>♝</td><td>♛</td><td>♚</td><td>♝</td><td>♞</td><td>♜</td>
+                        </tr>
+                        <tr><th scope="row">7</th><td>♟</td><td>♟</td><td>♟</td><td>♟</td><td>♟</td><td>♟</td><td>♟</td><td>♟</td></tr>
+                        <tr><th scope="row">6</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><th scope="row">5</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><th scope="row">4</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><th scope="row">3</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><th scope="row">2</th><td>♙</td><td>♙</td><td>♙</td><td>♙</td><td>♙</td><td>♙</td><td>♙</td><td>♙</td></tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>♖</td><td>♘</td><td>♗</td><td>♕</td><td>♔</td><td>♗</td><td>♘</td><td>♖</td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th scope="col">A</th><th scope="col">B</th><th scope="col">C</th><th scope="col">D</th><th scope="col">E</th><th scope="col">F</th><th scope="col">G</th><th scope="col">H</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </center>
         </section>
     </main>
 
